@@ -15,6 +15,8 @@
 	
 	mvn install 
 
+	jar gerado em entrevista\target\entrevista-0.1.jar
+	
 2 - Executar o jar gerado 	
 	
 	java -jar /entrevista/target/entrevista-0.1.jar
