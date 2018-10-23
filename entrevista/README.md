@@ -15,11 +15,11 @@
 	
 	mvn install 
 
-	jar gerado em entrevista\target\entrevista-0.1.jar
+	ou pegar o jar do github em  /target/entrevista-0.1.jar
 	
 2 - Executar o jar gerado 	
 	
-	java -jar /entrevista/target/entrevista-0.1.jar
+	java -jar /target/entrevista-0.1.jar
 
 3 - Acesso localhost:8080
 
