@@ -1,0 +1,183 @@
+{
+	"id": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+	"name": "ml",
+	"description": "",
+	"order": [
+		"4fdde2d0-f6e1-5745-c0bf-40111211787e",
+		"aba60ce6-c543-2b2b-51b0-8528af30eb41",
+		"63fb78a2-d185-8ac9-9f58-e39b5c7dd1c5",
+		"fed1bb92-49d5-d76d-e6a0-80cfcef5fe7e",
+		"ece4b533-7ee0-0a37-38f2-886d6317e5fc",
+		"3e91fe58-bac2-3181-fd75-0311a515e5a4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1540097645392,
+	"owner": "1138835",
+	"public": false,
+	"requests": [
+		{
+			"id": "3e91fe58-bac2-3181-fd75-0311a515e5a4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/statis",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540332139141,
+			"name": "http://localhost:8080/statis statis",
+			"description": "http://localhost:8080/statis",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": []
+		},
+		{
+			"id": "4fdde2d0-f6e1-5745-c0bf-40111211787e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/mutant",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540332124341,
+			"name": "REMOTE - /mutant/ - return OK - mutant",
+			"description": "",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": [],
+			"rawModeData": "{\r\n\"dna\":[\"AAAA\"]\r\n}"
+		},
+		{
+			"id": "63fb78a2-d185-8ac9-9f58-e39b5c7dd1c5",
+			"headers": "",
+			"headerData": [],
+			"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/statis",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540332129208,
+			"name": "REMOTE - statis",
+			"description": "",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": []
+		},
+		{
+			"id": "aba60ce6-c543-2b2b-51b0-8528af30eb41",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/mutant",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540332127225,
+			"name": "REMOTE - /mutant/ = return FORBIDDEN - human",
+			"description": "",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": [],
+			"rawModeData": "{\r\n\"dna\":[\"ATGCGA\"]\r\n}"
+		},
+		{
+			"id": "ece4b533-7ee0-0a37-38f2-886d6317e5fc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/mutant",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540332136874,
+			"name": "http://localhost:8080/mutant  human",
+			"description": "",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": [],
+			"rawModeData": "{\r\n\"dna\":[\"ATGCGA\"]\r\n}"
+		},
+		{
+			"id": "fed1bb92-49d5-d76d-e6a0-80cfcef5fe7e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/mutant",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540328152137,
+			"name": "http://localhost:8080/mutant mutant copy",
+			"description": "",
+			"collectionId": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"responses": [],
+			"rawModeData": "{\r\n\"dna\":[\"AAAA\"]\r\n}",
+			"collection_id": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+			"isFromCollection": true,
+			"collectionRequestId": "4fdde2d0-f6e1-5745-c0bf-40111211787e"
+		}
+	]
+}

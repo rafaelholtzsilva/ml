@@ -1,0 +1,113 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ml",
+		"_postman_id": "da8e1a11-0c5e-2052-b3b7-9a91835ec215",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REMOTE - /mutant/ - return OK - mutant",
+			"request": {
+				"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/mutant",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"AAAA\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "REMOTE - /mutant/ = return FORBIDDEN - human",
+			"request": {
+				"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/mutant",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "REMOTE - statis",
+			"request": {
+				"url": "http://ec2-18-228-153-13.sa-east-1.compute.amazonaws.com:8080/statis",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mutant mutant copy",
+			"request": {
+				"url": "http://localhost:8080/mutant",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"AAAA\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/mutant  human",
+			"request": {
+				"url": "http://localhost:8080/mutant",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\"]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/statis statis",
+			"request": {
+				"url": "http://localhost:8080/statis",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:8080/statis"
+			},
+			"response": []
+		}
+	]
+}
